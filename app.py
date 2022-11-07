@@ -98,7 +98,7 @@ if (selected == 'LogisticRegression'):
 
         prediction = LogisticRegression.predict(std_data)
 
-        prediction_probalities=model.predict_proba(std_data)
+        prediction_probalities=LogisticRegression.predict_proba(std_data)
 
         matrix=max(prediction_probalities)
         probability=max(max(prediction_probalities))                      
